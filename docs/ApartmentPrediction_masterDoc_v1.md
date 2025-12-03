@@ -161,13 +161,52 @@ public class Owner {
 
 ## UML
 
+Here are very brief, concrete `restaurant-related` examples for each **UML** class diagram relationship in [Class diagrams | Mermaid](https://mermaid.js.org/syntax/classDiagram.html):
+
+- **Inheritance (Generalization):**  
+  Chef --|> Employee  
+  Chef is a type of Employee.
+- **Composition:**  
+  Menu --* MenuItem  
+  Menu is composed of MenuItems; MenuItems can’t exist without the Menu.
+- **Aggregation:**  
+  Restaurant --o Table  
+  Restaurant has Tables, but Tables can exist if the Restaurant is closed.
+- **Association:**  
+  Waiter --> Order  
+  Waiter takes Orders.
+- **Link (Solid):**  
+  Customer -- Bill  
+  Customer is directly connected to Bill, representing a specific interaction.
+- **Dependency:**  
+  Receipt ..> Printer  
+  Receipt depends on Printer (uses it temporarily).
+- **Realization:**  
+  CardPayment ..|> PaymentMethod  
+  CardPayment realizes (implements) PaymentMethod interface.
+- **Link (Dashed):**  
+  Chef .. Kitchen  
+  Chef is loosely connected to Kitchen (less specific/weak association).
+
+```mermaid
+classDiagram
+Chef --|> Employee : Inheritance
+Menu --* MenuItem : Composition
+Restaurant --o Table : Aggregation
+Waiter --> Order : Association
+Customer -- Bill : Link(Solid)
+Receipt ..> Printer : Dependency
+CardPayment ..|> PaymentMethod : Realization
+Chef .. Kitchen : Link(Dashed)
+```
+
+### UML V1.0 ApartmentPredictor
+
 - [UML mermaid](https://github.com/AlbertProfe/ApartmentPredictor/blob/master/docs/appends/ApartmentPredictor-uml_v1.md)
-  
-  
 
 ![](https://raw.githubusercontent.com/AlbertProfe/ApartmentPredictor/refs/heads/master/docs/diagrams/ApartmentPredictor-uml_v1.png)
 
-## pom.xml
+## Pom.xml
 
 ```xml
 todo
