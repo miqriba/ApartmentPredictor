@@ -146,5 +146,42 @@ public class ApartmentInherenceTest {
 
         System.out.println("Calculate price Apartment: " + apartment.calculatePrice());
 
+        House house = new House();
+        //house.setId("HOU-001-K");
+        house.setGarden("Yes");
+        house.setGarageQty(2);
+        house.setRoofType("Tile");
+        house.setBedrooms(3);
+        house.setBathrooms(2);
+        house.setArea(100);
+
+        house.setAirconditioning("Yes");
+        house.setArea(100);
+
+        System.out.println(house);
+
+        System.out.println("Calculate price House: " + house.calculatePrice());
+
+        Duplex duplex = new Duplex();
+        //duplex.setId("DUP-001-K");
+        duplex.setBalcony("Yes");
+        duplex.setElevator(true);
+
+        duplex.setBathrooms(2);
+        duplex.setBedrooms(3);
+        duplex.setArea(100);
+        duplex.setStories(2);
+        duplex.setBasement("Yes");
+        duplex.setMainroad("Yes");
+        duplex.setPrefarea("Yes");
+        duplex.setGuestroom("Yes");
+        duplex.setParking(2);
+
+        System.out.println(duplex);
+
+        System.out.println("Calculate price Duplex: " + duplex.calculatePrice());
+
+
+
     }
 }
