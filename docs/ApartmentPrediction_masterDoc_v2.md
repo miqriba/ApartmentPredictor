@@ -353,6 +353,10 @@ Calls that will work
 
 - [Spring Boot: cycle – albertprofe wiki](https://albertprofe.dev/springboot/boot-what-cycle.html)
 
+Get operation: GET Cycle: Get all Apartments.
+
+
+
 ![](https://raw.githubusercontent.com/AlbertProfe/ApartmentPredictor/refs/heads/master/docs/screenshots/code-restcontroller.png)
 
 Post operation: POST Cycle: Create New Apartment
@@ -370,7 +374,7 @@ Link:
 
 - [Request/response Cycle](https://github.com/alexpjava/ApartmentPredictorAlpy/blob/main/docs/flow_request_response_cycle_en.md) by Alex P.
 
-![](https://raw.githubusercontent.com/AlbertProfe/ApartmentPredictor/refs/heads/master/docs/screenshots/UNL-reqres-RESTController.png)
+![](https://raw.githubusercontent.com/AlbertProfe/ApartmentPredictor/refs/heads/master/docs/diagram/UML-reqres-RESTController.png)
 
 #### Postman documentation API REST
 
